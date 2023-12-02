@@ -95,7 +95,7 @@ durationButton.addEventListener("click", changeDuration);
 
 function changeDuration() {
     var durationLabel = document.getElementById("duration-text");
-    duration = parseInt(window.prompt("Enter new duration:"))
+    duration = parseInt(window.prompt("Enter new duration:"));
     durationLabel.innerHTML = duration;
     recalculate();
 }
