@@ -1,4 +1,4 @@
-/****************** YOUR NAME: 
+/****************** YOUR NAME: Prayus Sharma
 
 The instructions describe the missing logic that is needed; you will translate these into JavaScript in the places indicated.
 
@@ -11,8 +11,8 @@ You are encouraged to use the provided naming convention for ease of review.
 
 // INSERT YOUR CODE HERE
 
-var modelName = 'XYZ'
-var duration = 0
+var modelName = 'XYZ';
+var duration = 0;
 
 
 /****************** helper function ******************/
@@ -28,12 +28,12 @@ var duration = 0
 // INSERT YOUR CODE HEREt
 
 function recalculate() {
-    var costLabel = document.getElementById("calculated-cost")
+    var costLabel = document.getElementById("calculated-cost");
     if (modelName == 'XYZ') {
-        costLabel.innerHTML = duration * 100
+        costLabel.innerHTML = duration * 100;
     }
     else {
-        costLabel.innerHTML = duration * 213
+        costLabel.innerHTML = duration * 213;
     }
 }
 
@@ -55,21 +55,21 @@ function recalculate() {
 // INSERT YOUR CODE HERE
 
 
-var modelButton = document.getElementById("model-button")
+var modelButton = document.getElementById("model-button");
 
 modelButton.addEventListener("click", changeModel);
 
 function changeModel() {
-    var modelLabel = document.getElementById("model-text")
+    var modelLabel = document.getElementById("model-text");
     if (modelName == 'XYZ') {
-        modelName = 'CPRG'
-        modelLabel.innerHTML = 'model CPRG'
+        modelName = 'CPRG';
+        modelLabel.innerHTML = 'model CPRG';
     }
     else if (modelName == 'CPRG') {
-        modelName = 'XYZ'
-        modelLabel.innerHTML = 'model XYZ'
+        modelName = 'XYZ';
+        modelLabel.innerHTML = 'model XYZ';
     }
-    recalculate()
+    recalculate();
 }
 
 
@@ -89,12 +89,12 @@ function changeModel() {
 // INSERT YOUR CODE HERE
 
 
-var durationButton = document.getElementById("duration-button")
+var durationButton = document.getElementById("duration-button");
 
 durationButton.addEventListener("click", changeDuration);
 
 function changeDuration() {
-    var durationLabel = document.getElementById("duration-text")
+    var durationLabel = document.getElementById("duration-text");
     duration = parseInt(window.prompt("Enter new duration:"))
     durationLabel.innerHTML = duration;
     recalculate();
